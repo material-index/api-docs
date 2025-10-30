@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "slug": "density",
+    "name": "Density",
+    "unit": "kg/m³",
+    "data_type": "numeric",
+    "category_id": 1,
+    "alternative_name": "Specific Gravity",
+    "created_by": null
+  },
+  {
+    "id": 2,
+    "slug": "melting_point",
+    "name": "Melting Point",
+    "unit": "°C",
+    "data_type": "numeric",
+    "category_id": 1,
+    "alternative_name": "Liquidus Temperature",
+    "created_by": null
+  },
+  {
+    "id": 3,
+    "slug": "boiling_point",
+    "name": "Boiling Point",
+    "unit": "°C",
+    "data_type": "numeric",
+    "category_id": 1,
+    "alternative_name": "Vaporization Temperature",
+    "created_by": null
+  },
+  {
+    "id": 4,
+    "slug": "tensile_strength",
+    "name": "Tensile Strength",
+    "unit": "MPa",
+    "data_type": "numeric",
+    "category_id": 2,
+    "alternative_name": "Ultimate Tensile Strength",
+    "created_by": null
+  },
+  {
+    "id": 5,
+    "slug": "yield_strength",
+    "name": "Yield Strength",
+    "unit": "MPa",
+    "data_type": "numeric",
+    "category_id": 2,
+    "alternative_name": "Yield Point",
+    "created_by": null
+  },
+  {
+    "id": 6,
+    "slug": "elastic_modulus",
+    "name": "Elastic Modulus",
+    "unit": "GPa",
+    "data_type": "numeric",
+    "category_id": 2,
+    "alternative_name": "Young's Modulus",
+    "created_by": null
+  },
+  {
+    "id": 7,
+    "slug": "hardness",
+    "name": "Hardness",
+    "unit": "HV",
+    "data_type": "numeric",
+    "category_id": 2,
+    "alternative_name": "Vickers Hardness",
+    "created_by": null
+  },
+  {
+    "id": 8,
+    "slug": "thermal_conductivity",
+    "name": "Thermal Conductivity",
+    "unit": "W/m·K",
+    "data_type": "numeric",
+    "category_id": 3,
+    "alternative_name": "Heat Conductivity",
+    "created_by": null
+  },
+  {
+    "id": 9,
+    "slug": "thermal_expansion",
+    "name": "Thermal Expansion Coefficient",
+    "unit": "1/K",
+    "data_type": "numeric",
+    "category_id": 3,
+    "alternative_name": "Coefficient of Thermal Expansion",
+    "created_by": null
+  },
+  {
+    "id": 10,
+    "slug": "heat_capacity",
+    "name": "Heat Capacity",
+    "unit": "J/kg·K",
+    "data_type": "numeric",
+    "category_id": 3,
+    "alternative_name": "Specific Heat",
+    "created_by": null
+  },
+  {
+    "id": 11,
+    "slug": "electrical_conductivity",
+    "name": "Electrical Conductivity",
+    "unit": "S/m",
+    "data_type": "numeric",
+    "category_id": 4,
+    "alternative_name": "Conductivity",
+    "created_by": null
+  },
+  {
+    "id": 12,
+    "slug": "electrical_resistivity",
+    "name": "Electrical Resistivity",
+    "unit": "Ω·m",
+    "data_type": "numeric",
+    "category_id": 4,
+    "alternative_name": "Resistivity",
+    "created_by": null
+  },
+  {
+    "id": 13,
+    "slug": "dielectric_constant",
+    "name": "Dielectric Constant",
+    "unit": "dimensionless",
+    "data_type": "numeric",
+    "category_id": 4,
+    "alternative_name": "Relative Permittivity",
+    "created_by": null
+  },
+  {
+    "id": 14,
+    "slug": "corrosion_resistance",
+    "name": "Corrosion Resistance",
+    "unit": "rating",
+    "data_type": "text",
+    "category_id": 5,
+    "alternative_name": "Chemical Resistance",
+    "created_by": null
+  },
+  {
+    "id": 15,
+    "slug": "ph_stability",
+    "name": "pH Stability Range",
+    "unit": "pH",
+    "data_type": "range",
+    "category_id": 5,
+    "alternative_name": "pH Range",
+    "created_by": null
+  },
+  {
+    "id": 16,
+    "slug": "refractive_index",
+    "name": "Refractive Index",
+    "unit": "dimensionless",
+    "data_type": "numeric",
+    "category_id": 6,
+    "alternative_name": "Index of Refraction",
+    "created_by": null
+  },
+  {
+    "id": 17,
+    "slug": "transmittance",
+    "name": "Transmittance",
+    "unit": "%",
+    "data_type": "numeric",
+    "category_id": 6,
+    "alternative_name": "Transparency",
+    "created_by": null
+  },
+  {
+    "id": 18,
+    "slug": "reflectance",
+    "name": "Reflectance",
+    "unit": "%",
+    "data_type": "numeric",
+    "category_id": 6,
+    "alternative_name": "Reflectivity",
+    "created_by": null
+  },
+  {
+    "id": 19,
+    "slug": "magnetic_permeability",
+    "name": "Magnetic Permeability",
+    "unit": "H/m",
+    "data_type": "numeric",
+    "category_id": 7,
+    "alternative_name": "Permeability",
+    "created_by": null
+  },
+  {
+    "id": 20,
+    "slug": "co2_footprint",
+    "name": "CO2 Footprint",
+    "unit": "kg CO2/kg",
+    "data_type": "numeric",
+    "category_id": 8,
+    "alternative_name": "Carbon Footprint",
+    "created_by": null
+  },
+  {
+    "id": 21,
+    "slug": "recyclability",
+    "name": "Recyclability",
+    "unit": "rating",
+    "data_type": "text",
+    "category_id": 8,
+    "alternative_name": "Recycling Potential",
+    "created_by": null
+  },
+  {
+    "id": 22,
+    "slug": "machinability",
+    "name": "Machinability",
+    "unit": "rating",
+    "data_type": "text",
+    "category_id": 9,
+    "alternative_name": "Machining Rating",
+    "created_by": null
+  },
+  {
+    "id": 23,
+    "slug": "weldability",
+    "name": "Weldability",
+    "unit": "rating",
+    "data_type": "text",
+    "category_id": 9,
+    "alternative_name": "Welding Rating",
+    "created_by": null
+  },
+  {
+    "id": 24,
+    "slug": "surface_roughness",
+    "name": "Surface Roughness",
+    "unit": "μm",
+    "data_type": "numeric",
+    "category_id": 10,
+    "alternative_name": "Ra Value",
+    "created_by": null
+  },
+  {
+    "id": 25,
+    "slug": "friction_coefficient",
+    "name": "Friction Coefficient",
+    "unit": "dimensionless",
+    "data_type": "numeric",
+    "category_id": 10,
+    "alternative_name": "Coefficient of Friction",
+    "created_by": null
+  }
+]

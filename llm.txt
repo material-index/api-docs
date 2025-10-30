@@ -1,0 +1,11 @@
+Project: material-index api-docs
+High-signal map:
+- docs/: guides and reference
+- openapi/openapi.yaml: canonical API spec
+- sdk/: generated or hand-written SDKs
+- schema/: DB schema/types (safe subset)
+- data/: sample exports (allowed tables only)
+Key tasks:
+- Validate OpenAPI (spectral)
+- Generate TS SDK (openapi-generator/orval)
+Safety: Exclude user tables and PII. No secrets in repo.

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Physical Properties",
+    "description": "Basic physical characteristics of materials",
+    "created_by": null
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Properties",
+    "description": "Properties related to mechanical behavior under load",
+    "created_by": null
+  },
+  {
+    "id": 3,
+    "name": "Thermal Properties",
+    "description": "Properties related to heat transfer and temperature behavior",
+    "created_by": null
+  },
+  {
+    "id": 4,
+    "name": "Electrical Properties",
+    "description": "Properties related to electrical conductivity and behavior",
+    "created_by": null
+  },
+  {
+    "id": 5,
+    "name": "Chemical Properties",
+    "description": "Properties related to chemical behavior and resistance",
+    "created_by": null
+  },
+  {
+    "id": 6,
+    "name": "Optical Properties",
+    "description": "Properties related to light interaction and transparency",
+    "created_by": null
+  },
+  {
+    "id": 7,
+    "name": "Magnetic Properties",
+    "description": "Properties related to magnetic behavior",
+    "created_by": null
+  },
+  {
+    "id": 8,
+    "name": "Environmental Properties",
+    "description": "Properties related to environmental impact and sustainability",
+    "created_by": null
+  },
+  {
+    "id": 9,
+    "name": "Processing Properties",
+    "description": "Properties related to manufacturing and processing",
+    "created_by": null
+  },
+  {
+    "id": 10,
+    "name": "Surface Properties",
+    "description": "Properties related to surface characteristics and finish",
+    "created_by": null
+  }
+]
+
+
+

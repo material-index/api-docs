@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "name": "Metals",
+    "tooltip": "Metallic materials and alloys",
+    "parent_id": null,
+    "created_by": null
+  },
+  {
+    "id": 2,
+    "name": "Ferrous Metals",
+    "tooltip": "Iron-based metals and alloys",
+    "parent_id": 1,
+    "created_by": null
+  },
+  {
+    "id": 3,
+    "name": "Non-Ferrous Metals",
+    "tooltip": "Non-iron based metals and alloys",
+    "parent_id": 1,
+    "created_by": null
+  },
+  {
+    "id": 4,
+    "name": "Steel",
+    "tooltip": "Iron-carbon alloys with various compositions",
+    "parent_id": 2,
+    "created_by": null
+  },
+  {
+    "id": 5,
+    "name": "Cast Iron",
+    "tooltip": "Iron-carbon alloys with high carbon content",
+    "parent_id": 2,
+    "created_by": null
+  },
+  {
+    "id": 6,
+    "name": "Aluminum Alloys",
+    "tooltip": "Aluminum-based alloys with various alloying elements",
+    "parent_id": 3,
+    "created_by": null
+  },
+  {
+    "id": 7,
+    "name": "Copper Alloys",
+    "tooltip": "Copper-based alloys including brass and bronze",
+    "parent_id": 3,
+    "created_by": null
+  },
+  {
+    "id": 8,
+    "name": "Titanium Alloys",
+    "tooltip": "Titanium-based alloys for aerospace and medical applications",
+    "parent_id": 3,
+    "created_by": null
+  },
+  {
+    "id": 9,
+    "name": "Polymers",
+    "tooltip": "Plastic and polymer materials",
+    "parent_id": null,
+    "created_by": null
+  },
+  {
+    "id": 10,
+    "name": "Thermoplastics",
+    "tooltip": "Polymers that can be melted and reshaped",
+    "parent_id": 9,
+    "created_by": null
+  },
+  {
+    "id": 11,
+    "name": "Thermosets",
+    "tooltip": "Polymers that cure irreversibly",
+    "parent_id": 9,
+    "created_by": null
+  },
+  {
+    "id": 12,
+    "name": "Elastomers",
+    "tooltip": "Rubber-like materials with high elasticity",
+    "parent_id": 9,
+    "created_by": null
+  },
+  {
+    "id": 13,
+    "name": "Ceramics",
+    "tooltip": "Ceramic and glass materials",
+    "parent_id": null,
+    "created_by": null
+  },
+  {
+    "id": 14,
+    "name": "Traditional Ceramics",
+    "tooltip": "Clay-based ceramics and pottery",
+    "parent_id": 13,
+    "created_by": null
+  },
+  {
+    "id": 15,
+    "name": "Advanced Ceramics",
+    "tooltip": "High-performance ceramic materials",
+    "parent_id": 13,
+    "created_by": null
+  },
+  {
+    "id": 16,
+    "name": "Glass",
+    "tooltip": "Amorphous ceramic materials",
+    "parent_id": 13,
+    "created_by": null
+  },
+  {
+    "id": 17,
+    "name": "Composites",
+    "tooltip": "Composite and hybrid materials",
+    "parent_id": null,
+    "created_by": null
+  },
+  {
+    "id": 18,
+    "name": "Fiber Reinforced Composites",
+    "tooltip": "Materials reinforced with fibers",
+    "parent_id": 17,
+    "created_by": null
+  },
+  {
+    "id": 19,
+    "name": "Particle Reinforced Composites",
+    "tooltip": "Materials reinforced with particles",
+    "parent_id": 17,
+    "created_by": null
+  },
+  {
+    "id": 20,
+    "name": "Natural Materials",
+    "tooltip": "Wood, stone, and natural materials",
+    "parent_id": null,
+    "created_by": null
+  },
+  {
+    "id": 21,
+    "name": "Wood",
+    "tooltip": "Natural wood materials",
+    "parent_id": 20,
+    "created_by": null
+  },
+  {
+    "id": 22,
+    "name": "Stone",
+    "tooltip": "Natural stone materials",
+    "parent_id": 20,
+    "created_by": null
+  },
+  {
+    "id": 23,
+    "name": "Smart Materials",
+    "tooltip": "Shape memory and smart materials",
+    "parent_id": null,
+    "created_by": null
+  },
+  {
+    "id": 24,
+    "name": "Shape Memory Alloys",
+    "tooltip": "Alloys that return to original shape when heated",
+    "parent_id": 23,
+    "created_by": null
+  },
+  {
+    "id": 25,
+    "name": "Piezoelectric Materials",
+    "tooltip": "Materials that generate electricity when stressed",
+    "parent_id": 23,
+    "created_by": null
+  }
+]
+
+
+
