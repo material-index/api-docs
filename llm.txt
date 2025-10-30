@@ -1,11 +1,99 @@
 Project: material-index api-docs
-High-signal map:
+
+GOALS
+- Provide accurate, API-first answers using the canonical OpenAPI spec.
+- Prefer public schema (safe subset) and example data; never use excluded tables.
+- Return concise, copy-pastable requests/responses (curl/TS/Python) when asked.
+
+NON-GOALS
+- Do not invent fields, endpoints, or SQL outside the provided schema/spec.
+- Do not expose secrets, PII, or private/internal tables.
+
+HIGH-SIGNAL MAP
 - docs/: guides and reference
 - openapi/openapi.yaml: canonical API spec
 - sdk/: generated or hand-written SDKs
 - schema/: DB schema/types (safe subset)
 - data/: sample exports (allowed tables only)
-Key tasks:
-- Validate OpenAPI (spectral)
-- Generate TS SDK (openapi-generator/orval)
-Safety: Exclude user tables and PII. No secrets in repo.
+
+PUBLIC SCHEMA (SAFE SUBSET)
+Tables (key columns only; see schema/types.ts for full types):
+- materials
+  - id (int, PK), name (text), description (text), material_category_id (int)
+  - alternative_names (text[]/text), scientific_name (text)
+  - is_verified (bool), source (text), slug (text), created_at/updated_at (timestamp)
+- material_properties
+  - id (bigint, PK), material_id (int, FK→materials.id)
+  - property_id (int, FK→properties.id), property_category (int, FK→property_categories.id)
+  - value/value_min/value_max (numeric), unit (text), is_verified (bool)
+  - created_at/updated_at (timestamptz)
+- properties
+  - id (int, PK), slug (text), name (text), unit (text), data_type (text)
+  - category_id (int, FK→property_categories.id)
+- property_categories
+  - id (int, PK), name (text), description (text)
+
+RELATIONSHIPS
+- materials (1) ← material_properties (n)
+- properties (1) ← material_properties (n)
+- property_categories (1) ← properties (n)
+- material_categories link to materials (not documented here if excluded)
+
+EXCLUDED TABLES (DO NOT USE OR REFER TO)
+- user_roles, user_profiles, user_preferences, user_consent, api_keys,
+  admin_edit_suggestions, consent_types, consent_audit_log,
+  data_subject_requests, privacy_settings
+
+API-FIRST DIRECTION
+- Use OpenAPI at openapi/openapi.yaml to derive endpoints and payloads.
+- Prefer API calls over direct SQL; include minimal examples.
+- Keep requests idempotent for reads; document pagination and filters.
+
+CANONICAL EXAMPLES
+1) List materials by category (curl)
+  curl -H "Authorization: Bearer $API_KEY" \
+    "https://api.material-index.com/v1/materials?category=metals&limit=20"
+
+2) Search properties (TypeScript SDK)
+  import { MaterialIndexAPI } from '@material-index/api-client'
+  const api = new MaterialIndexAPI({ baseURL: 'https://api.material-index.com/v1', apiKey: process.env.API_KEY! })
+  const props = await api.properties.search({ query: 'density', dataType: 'number' })
+
+3) Join-like access via API (Python)
+  from material_index_api import MaterialIndexAPI
+  api = MaterialIndexAPI(base_url='https://api.material-index.com/v1', api_key=API_KEY)
+  mats = api.materials.list(category='metals', limit=10)
+  # Then fetch properties for a given material_id:
+  mprops = api.material_properties.list(material_id=mats[0]['id'], limit=50)
+
+PAGINATION & FILTERS (GUIDANCE)
+- Use explicit limit (<= 100) and page/offset or cursor if provided by spec.
+- Filters: category, slug, data_type, name contains (per OpenAPI). Avoid wildcard SQL.
+
+STYLE & UNITS
+- Keep units from the property definition (e.g., kg/m³) and do not convert unless asked.
+- Use ISO8601 timestamps in examples.
+
+SAFETY & RATE LIMITS
+- Assume API key auth; never print real keys.
+- Respect rate limits; suggest backoff (e.g., 429 → exponential retry).
+- Refuse requests touching excluded tables or private fields.
+
+TOOLING
+- Validate OpenAPI: spectral lint openapi/openapi.yaml
+- Generate TS SDK: openapi-generator/orval → sdk/typescript/
+- Types: schema/types.ts (generated from Supabase; includes public tables)
+
+WHEN TO DECLINE OR REDIRECT
+- Requests for excluded tables, PII, or secrets → Decline and point to public API.
+- Requests for direct DB writes or admin ops in a public context → Decline unless explicitly permitted by spec.
+
+OUTPUT PREFERENCES
+- Prefer concise examples; include 1–2 representative fields in responses.
+- Include endpoint path, query params, and minimal headers.
+
+HELPFUL POINTERS
+- API Base: https://api.material-index.com/v1
+- Spec: openapi/openapi.yaml
+- Public schema types: schema/types.ts
+- Sample data: data/
