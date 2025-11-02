@@ -1,7 +1,7 @@
 # Material Index Database
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Database Version](https://img.shields.io/badge/Database%20Version-1.0.0-blue.svg)](https://github.com/material-index/material-index-api)
+[![Database Version](https://img.shields.io/badge/Database%20Version-1.0.0-blue.svg)](https://github.com/material-index/api-docs)
 
 ## 🌟 Overview
 
@@ -262,7 +262,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **Documentation**: [docs.material-index.com](https://docs.material-index.com)
 - **GitHub**: [github.com/material-index/api-docs](https://github.com/material-index/api-docs)
 
-Note: Local-only folders `backup/` and `security/` are excluded from version control. See `SECURITY_README.md` and `ENVIRONMENT.md` for details.
 
 ---
 
