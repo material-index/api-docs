@@ -1,19 +1,18 @@
 # Material Index Database - Sample Data
 
-This directory contains sample data that mirrors the database schema for the Material Index API. The data is provided in JSON format and can be used for development, testing, and documentation purposes.
+This directory contains **sample data only** for the Material Index API. The data is provided in JSON format and can be used for development, testing, and documentation purposes. These are example entries and do not represent the complete dataset available through the API.
 
 ## 📁 Directory Structure
 
 ```
 data/
 ├── README.md                           # This file
-├── sample/                            # Sample data files
-│   ├── material_categories.json      # Material category hierarchy
-│   ├── property_categories.json      # Property classification
-│   ├── properties.json               # Material property definitions
-│   ├── materials.json                # Sample materials
-│   └── material_properties.json      # Property values for materials
-└── schema/                           # Database schema files (future)
+└── sample/                            # Sample data files
+    ├── material_categories.json      # Material category hierarchy
+    ├── property_categories.json      # Property classification
+    ├── properties.json               # Material property definitions
+    ├── materials.json                # Sample materials
+    └── material_properties.json      # Property values for materials
 ```
 
 ## 📊 Data Overview

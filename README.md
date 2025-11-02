@@ -2,7 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Database Version](https://img.shields.io/badge/Database%20Version-1.0.0-blue.svg)](https://github.com/material-index/material-index-api)
-[![Supabase](https://img.shields.io/badge/Supabase-Enabled-green.svg)](https://supabase.com)
 
 ## 🌟 Overview
 
@@ -253,7 +252,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 - **Documentation**: [docs.material-index.com](https://docs.material-index.com)
 - **Database Status**: [status.material-index.com](https://status.material-index.com)
-- **Community**: [GitHub Discussions](https://github.com/material-index/material-index-api/discussions)
+- **Community**: [GitHub Discussions](https://github.com/material-index/api-docs/discussions)
 - **Email**: [info@material-index.com](mailto:info@material-index.com)
 
 ## 🔗 Links
@@ -261,7 +260,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **Website**: [material-index.com](https://material-index.com)
 - **API Gateway**: [api.material-index.com](https://api.material-index.com)
 - **Documentation**: [docs.material-index.com](https://docs.material-index.com)
-- **GitHub**: [github.com/material-index/material-index-api](https://github.com/material-index/material-index-api)
+- **GitHub**: [github.com/material-index/api-docs](https://github.com/material-index/api-docs)
 
 Note: Local-only folders `backup/` and `security/` are excluded from version control. See `SECURITY_README.md` and `ENVIRONMENT.md` for details.
 

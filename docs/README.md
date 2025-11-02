@@ -6,14 +6,8 @@ Welcome to the Material Index API documentation. This comprehensive guide covers
 
 - [Getting Started](./GETTING_STARTED.md)
 - [API Reference](./API_REFERENCE.md)
-- [Authentication](./AUTHENTICATION.md)
-- [SDKs](./SDKS.md)
-- [Examples](./EXAMPLES.md)
-- [Deployment](./DEPLOYMENT.md)
-- [Production Guide](./PRODUCTION_DEPLOYMENT.md)
-- [Architecture](./ARCHITECTURE.md)
-- [Security](./SECURITY.md)
-- [Troubleshooting](./TROUBLESHOOTING.md)
+- [Database Schema](./DATABASE_SCHEMA.md)
+- [SDK Design](./SDK_DESIGN.md)
 
 ## 🚀 Quick Start
 
@@ -42,32 +36,20 @@ pip install material-index-api
 ### Core Documentation
 - **[Getting Started](./GETTING_STARTED.md)** - Quick setup and first API call
 - **[API Reference](./API_REFERENCE.md)** - Complete endpoint documentation
-- **[Authentication](./AUTHENTICATION.md)** - API keys and JWT authentication
-- **[SDKs](./SDKS.md)** - Language-specific SDKs and examples
-
-### Advanced Topics
-- **[Architecture](./ARCHITECTURE.md)** - System design and components
-- **[Security](./SECURITY.md)** - Security best practices and rate limiting
-- **[Deployment](./DEPLOYMENT.md)** - Self-hosting and deployment options
-- **[Production Guide](./PRODUCTION_DEPLOYMENT.md)** - Production deployment guide
-
-### Developer Resources
-- **[Examples](./EXAMPLES.md)** - Code examples and use cases
-- **[Troubleshooting](./TROUBLESHOOTING.md)** - Common issues and solutions
-- **[Changelog](./CHANGELOG.md)** - API version history
-- **[Status](./STATUS.md)** - API status and uptime
+- **[Database Schema](./DATABASE_SCHEMA.md)** - Public database schema and table definitions
+- **[SDK Design](./SDK_DESIGN.md)** - SDK architecture and usage guide
 
 ## 🔗 External Resources
 
 - **Website**: [material-index.com](https://material-index.com)
 - **API Portal**: [api.material-index.com](https://api.material-index.com)
 - **Status Page**: [status.material-index.com](https://status.material-index.com)
-- **GitHub Repository**: [github.com/material-index/material-index-api](https://github.com/material-index/material-index-api)
+- **GitHub Repository**: [github.com/material-index/api-docs](https://github.com/material-index/api-docs)
 
 ## 📞 Support
 
 - **Email**: [info@material-index.com](mailto:info@material-index.com)
-- **GitHub Issues**: [Report a bug](https://github.com/material-index/material-index-api/issues)
+- **GitHub Issues**: [Report a bug](https://github.com/material-index/api-docs/issues)
 - **Documentation**: [docs.material-index.com](https://docs.material-index.com)
 
 ---

@@ -24,7 +24,6 @@ servers:
 
 security:
   - ApiKeyAuth: []
-  - SupabaseAuth: []
 
 paths:
   /health:
@@ -437,11 +436,6 @@ components:
       in: header
       name: Authorization
       description: API Key authentication using Bearer token format
-    SupabaseAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
-      description: Supabase JWT token authentication
 
   schemas:
     Material:

@@ -82,7 +82,7 @@ SAFETY & RATE LIMITS
 TOOLING
 - Validate OpenAPI: spectral lint openapi/openapi.yaml
 - Generate TS SDK: openapi-generator/orval → sdk/typescript/
-- Types: schema/types.ts (generated from Supabase; includes public tables)
+- Types: schema/types.ts (includes public table type definitions)
 
 WHEN TO DECLINE OR REDIRECT
 - Requests for excluded tables, PII, or secrets → Decline and point to public API.
